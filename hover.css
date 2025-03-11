@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e3e3bd;
+    font-family: "Saans TRIAL";
+}
+
+/* img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: transform;    
+} */
+
+h1{
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 0.9;
+}
+
+p{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.intro, .outro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards{
+    min-height: 100vh;
+    height: max-content;
+}
+
+.awards p{
+    padding: 5px 20px;
+}
+
+.awards-list{
+    border-top: 1px solid #1b1b1b;
+}
+
+.award {
+    height: 80px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.award-wrapper{
+    position: relative;
+    height: 240px;
+    will-change: transform;
+    /* transform: translate(-160px); */
+}
+
+.award-name, .award-project{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #1b1b1b;
+}
+
+.award-name{
+    background-color: #e3e3bd;
+    color: #222;
+}
+
+.award-project{
+    background-color: #222;
+    color: #e3e3bd;
+}
+
+.award-preview{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 30%;
+    height: 30%;
+    z-index: 2;
+}
